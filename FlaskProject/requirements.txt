@@ -3,4 +3,4 @@ Flask-Mail
 Flask-SQLAlchemy
 python-dotenv
 gunicorn
-pymysql  # or psycopg2-binary if PostgreSQL
+psycopg2-binary
