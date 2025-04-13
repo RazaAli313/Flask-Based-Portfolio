@@ -15,7 +15,7 @@ This is a professional **personal portfolio website** built with **Flask**, **SQ
   - Saves data to **MySQL**
   - Sends email notifications using **Flask-Mail**
 - 🛡️ Secure credentials using `.env` and environment variables
-- 📦 Fully ready for **automatic deployment** via **GitHub + Render**
+- 📦 Fully ready for **automatic deployment** via **GitHub + Railway**
 - 🌐 Frontend powered by **HTML5**, **CSS3**, and **Vanilla JavaScript**
 
 ---
@@ -27,12 +27,12 @@ This is a professional **personal portfolio website** built with **Flask**, **SQ
 | Backend     | Flask, Flask-Mail, SQLAlchemy   |
 | Frontend    | HTML5, CSS3, Vanilla JavaScript |
 | Database    | MySQL                           |
-| Deployment  | Render + GitHub Integration     |
+| Deployment  | Railway + GitHub Integration     |
 
 ---
 
 ## 📁 Project Structure
-. ├── app.py ├── database.py ├── models/ │ └── contacts.py ├── static/ │ ├── css/ │ └── js/ ├── templates/ │ └── partials/ │ ├── layout.html │ └── [section].html ├── .env ├── render.yml ├── requirements.txt └── README.md
+. ├── app.py ├── database.py ├── models/ │ └── contacts.py ├── static/ │ ├── css/ │ └── js/ ├── templates/ │ └── partials/ │ ├── layout.html │ └── [section].html ├── .env ├──ProcFile ├── requirements.txt └── README.md
 
 
 ---
