@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: flask-portfolio
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn app:app
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: MAIL_USERNAME
+        sync: false
+      - key: MAIL_PASSWORD
+        sync: false
+      - key: SECRET_KEY
+        sync: false
