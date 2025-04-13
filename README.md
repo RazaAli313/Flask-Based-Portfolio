@@ -15,7 +15,7 @@ This is a professional **personal portfolio website** built with **Flask**, **SQ
   - Saves data to **MySQL**
   - Sends email notifications using **Flask-Mail**
 - 🛡️ Secure credentials using `.env` and environment variables
-- 📦 Fully ready for **automatic deployment** via **GitHub + Vercel**
+- 📦 Fully ready for **automatic deployment** via **GitHub + Render**
 - 🌐 Frontend powered by **HTML5**, **CSS3**, and **Vanilla JavaScript**
 
 ---
@@ -27,12 +27,12 @@ This is a professional **personal portfolio website** built with **Flask**, **SQ
 | Backend     | Flask, Flask-Mail, SQLAlchemy   |
 | Frontend    | HTML5, CSS3, Vanilla JavaScript |
 | Database    | MySQL                           |
-| Deployment  | Vercel + GitHub Integration     |
+| Deployment  | Render + GitHub Integration     |
 
 ---
 
 ## 📁 Project Structure
-. ├── app.py ├── database.py ├── models/ │ └── contacts.py ├── static/ │ ├── css/ │ └── js/ ├── templates/ │ └── partials/ │ ├── layout.html │ └── [section].html ├── .env ├── vercel.json ├── requirements.txt └── README.md
+. ├── app.py ├── database.py ├── models/ │ └── contacts.py ├── static/ │ ├── css/ │ └── js/ ├── templates/ │ └── partials/ │ ├── layout.html │ └── [section].html ├── .env ├── render.yml ├── requirements.txt └── README.md
 
 
 ---
@@ -45,4 +45,5 @@ Create a `.env` file in the root with the following keys:
 MAIL_USERNAME=your_email@gmail.com
 MAIL_PASSWORD=your_app_password   # Use Gmail App Password if 2FA is enabled
 SECRET_KEY=your_secret_key
+DATABASE_URL=your_database_url
 
