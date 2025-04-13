@@ -8,8 +8,10 @@ import os
 load_dotenv()
 app = Flask(__name__)
 
-# App Configurations
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:@localhost/portfolio_db'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv(
+    'DATABASE_URL',  
+    'mysql+pymysql://root:@localhost/portfolio_db'  
+)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
