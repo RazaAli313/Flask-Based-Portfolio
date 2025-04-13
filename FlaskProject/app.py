@@ -33,6 +33,7 @@ def section(section):
 
 @app.route('/contact', methods=['POST'])
 @app.route('/contact', methods=['POST'])
+
 def contact():
     try:
         name = request.form.get("name")
@@ -70,7 +71,11 @@ def contact():
         print("❌ ERROR:", e)  # Most important line!
         flash('An error occurred. Please try again later.', 'danger')
         return redirect(url_for('home'))
-
+def vercel_handler(request):
+    from werkzeug.wrappers import Response
+    with app.request_context(request.environ):
+        response = app.full_dispatch_request()
+    return Response(response.get_data(), status=response.status_code, headers=dict(response.headers))
 
 if __name__ == '__main__':
     app.run(debug=True)
