@@ -1,16 +1,6 @@
-# Core Requirements
-Flask==2.3.2
-Flask-SQLAlchemy==3.0.3
-Flask-Mail==0.9.1
-pymysql  # MySQL connector for Python
-
-# Development & Security
-python-dotenv==1.0.0  # For environment variables
-Jinja2==3.1.2  # Templating engine
-
-# Database Tools
-SQLAlchemy==2.0.19  # ORM
-alembic==1.11.1  # Database migrations (optional)
-
-# Production Ready
-gunicorn==20.1.0  # Production WSGI server (optional)
+Flask
+Flask-Mail
+Flask-SQLAlchemy
+python-dotenv
+gunicorn
+pymysql  # or psycopg2-binary if PostgreSQL
