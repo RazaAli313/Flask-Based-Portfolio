@@ -2,7 +2,7 @@
 
 # 🌐 Personal Portfolio Website (Flask + Vanilla JS)
 
-This is a professional **personal portfolio website** built with **Flask**, **SQLAlchemy**, and **Vanilla JavaScript**. It includes smooth navigation using `history.pushState` and a dynamic single-page layout powered by HTML5 and CSS3. The contact form saves submissions to a MySQL database and sends email notifications using Flask-Mail.
+This is a professional **personal portfolio website** built with **Flask**, **SQLAlchemy**, and **Vanilla JavaScript**. It includes smooth navigation using `history.pushState` and a dynamic single-page layout powered by HTML5 and CSS3. The contact form saves submissions to a PostgreSQL database and sends email notifications using Flask-Mail.
 
 ---
 
@@ -12,7 +12,7 @@ This is a professional **personal portfolio website** built with **Flask**, **SQ
 - ⚙️ Clean, modular database model using Flask's ORM
 - 🧠 Seamless page transitions with `history.pushState` (Single Page Navigation)
 - 📬 Contact form:
-  - Saves data to **MySQL**
+  - Saves data to **PostgreSQL**
   - Sends email notifications using **Flask-Mail**
 - 🛡️ Secure credentials using `.env` and environment variables
 - 📦 Fully ready for **automatic deployment** via **GitHub + Railway**
@@ -26,7 +26,7 @@ This is a professional **personal portfolio website** built with **Flask**, **SQ
 |-------------|---------------------------------|
 | Backend     | Flask, Flask-Mail, SQLAlchemy   |
 | Frontend    | HTML5, CSS3, Vanilla JavaScript |
-| Database    | MySQL                           |
+| Database    | PostgreSQL                           |
 | Deployment  | Railway + GitHub Integration     |
 
 ---
