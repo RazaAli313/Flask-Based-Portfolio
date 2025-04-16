@@ -68,9 +68,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_0FE201A491C34ED7B37A7B0B645F8410 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_C09B2FD752CA4D3FAA9F0020231BC9B2 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_FD54B4A64F69458BADF7705A63E8A65F }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_D5C5F4D7345F47BFA64ED3EFBF51F9DB }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_8BBE28A484644CCB9CD5A450B6BD1666 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_51E9976CEE404AC9B8578224095F2C33 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
@@ -78,5 +78,4 @@ jobs:
         with:
           app-name: 'razaali'
           slot-name: 'Production'
-          package: FlaskProject
           
