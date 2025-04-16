@@ -78,4 +78,5 @@ jobs:
         with:
           app-name: 'razaali'
           slot-name: 'Production'
+          package: FlaskProject
           
