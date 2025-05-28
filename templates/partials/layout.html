@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Raza Ali | Portfolio{% endblock %}</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='assets/favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/dist/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="{{ url_for('static', filename='js/app.js') }}" defer></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top shadow">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="/">Raza Ali</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item nav-item-hover px-2" data-section="index" data-path="/">Home</li>
+                <li class="nav-item nav-item-hover px-2" data-section="about" data-path="about">About</li>
+                <li class="nav-item nav-item-hover px-2" data-section="education" data-path="education">Education</li>
+                <li class="nav-item nav-item-hover px-2" data-section="skills" data-path="skills">Skills</li>
+                <li class="nav-item nav-item-hover px-2" data-section="projects" data-path="projects">Projects</li>
+                <li class="nav-item nav-item-hover px-2" data-section="certifications" data-path="certifications">Certifications</li>
+                <li class="nav-item nav-item-hover px-2" data-section="contact" data-path="contact">Contact</li>
+            </ul>
+        </div>
+
+        <div class="d-flex ms-3">
+            <button id="btn" class="btn btn-outline-light rounded-circle px-3 mode-toggle">
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<div id="content" class="container-fluid p-0"></div>
+
+
+<footer class="footer-section bg-dark text-white pt-5 pb-4">
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <h3 class="text-purple mb-4 fw-bold">Syed Muhammad Raza Ali</h3>
+        <p class="footer-text mb-4">Full Stack Developer & AI/ML Engineer passionate about building innovative solutions and beautiful web experiences.</p>
+        <div class="social-icons mt-4">
+          <a href="https://www.linkedin.com/in/razaali313/" target="_blank" class="social-icon me-3" aria-label="LinkedIn"><i class="fab fa-linkedin-in fa-lg"></i></a>
+          <a href="https://github.com/RazaAli313" target="_blank" class="social-icon me-3" aria-label="GitHub"><i class="fab fa-github fa-lg"></i></a>
+          <a href="https://www.instagram.com/muhammadrazaali313/" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+        </div>
+      </div>
+
+
+      <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+        <h5 class="text-purple mb-4 fw-bold">Quick Links</h5>
+        <ul class="footer-links list-unstyled">
+          <li class="mb-2"><a href="#" class="footer-link" data-section="index" data-path="/">Home</a></li>
+          <li class="mb-2"><a href="#" class="footer-link" data-section="about" data-path="about">About</a></li>
+          <li class="mb-2"><a href="#" class="footer-link" data-section="projects" data-path="projects">Projects</a></li>
+          <li class="mb-2"><a href="#" class="footer-link" data-section="contact" data-path="contact">Contact</a></li>
+        </ul>
+      </div>
+
+
+      <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+        <h5 class="text-purple mb-4 fw-bold">Services</h5>
+        <ul class="footer-links list-unstyled ">
+            <li><a class="mb-2 footer-link">Web Development</a></li>
+          <li> <a class="mb-2 footer-link">AI Solutions</a></li>
+          <li><a class="mb-2 footer-link">Consulting</a></li>
+          <li> <a class="mb-2 footer-link">UI/UX Design</a></li>
+        </ul>
+      </div>
+
+
+      <div class="col-lg-3 col-md-4">
+        <h5 class="text-purple mb-4 fw-bold">Contact Info</h5>
+        <ul class="footer-contact list-unstyled">
+          <li class="mb-3"><i class="fas fa-envelope me-2 text-purple"></i>razaali.services@gmail.com</li>
+          <li class="mb-3"><i class="fas fa-phone-alt me-2 text-purple"></i> +92 (328) 4003-835</li>
+          <li class="mb-3"><i class="fas fa-map-marker-alt me-2 text-purple"></i> Lahore, Pakistan</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="footer-divider my-4">
+
+    <div class="row">
+      <div class="col-md-6 text-center text-md-start">
+        <p class="footer-copyright mb-0">&copy; {{ date }} Syed Muhammad Raza Ali. All rights reserved.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <p class="footer-credit mb-0">Made with <i class="fas fa-heart text-purple"></i> and <i class="fas fa-coffee text-purple"></i> by Syed Muhammad Raza Ali</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="{{ url_for('static', filename='bootstrap/dist/js/bootstrap.bundle.js') }}"></script>
+</body>
+</html>

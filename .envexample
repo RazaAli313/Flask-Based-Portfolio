@@ -1,0 +1,3 @@
+MAIL_USERNAME=your_email@gmail.com
+MAIL_PASSWORD=your_app_password   # Use Gmail App Password if 2FA is enabled
+SECRET_KEY=your_secret_key
