@@ -44,7 +44,7 @@ def contact():
 
         print(f"Received: {name}, {email}, {subject}, {message}")  # Debug log
 
-        new_contact = Contacts(name=name, email=email, subject=subject, message=message)
+        # new_contact = Contacts(name=name, email=email, subject=subject, message=message)
         # db.session.add(new_contact)
         # db.session.commit()
         # print("Saved to database ✅")
@@ -69,7 +69,7 @@ def contact():
 
     except Exception as e:
         # db.session.rollback()
-        print("❌ ERROR:", e)  # Most important line!
+        # print("❌ ERROR:", e)  # Most important line!
         flash('An error occurred. Please try again later.', 'danger')
         return redirect(url_for('home'))
 def vercel_handler(request):
