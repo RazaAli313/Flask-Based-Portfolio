@@ -32,7 +32,10 @@ def home(path=None):
 def section(section):
     return render_template(f"partials/{section}.html")
 
-
+@app.route('/contact', methods=['GET'])
+def contact_form():
+    return render_template('partials/contact.html')
+    
 @app.route('/contact', methods=['POST'])
 
 def contact():
