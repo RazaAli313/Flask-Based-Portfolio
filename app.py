@@ -1,16 +1,16 @@
 from flask import Flask, render_template, request, flash, redirect, url_for
 from flask_mail import Mail, Message
 from datetime import datetime
-from database import db, Contacts
+# from database import db, Contacts
 from dotenv import load_dotenv
 import os
 
 load_dotenv()
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv(
-    'DATABASE_URL',  
-)
+# app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv(
+#     'DATABASE_URL',  
+# )
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
@@ -19,7 +19,7 @@ app.config['MAIL_USERNAME'] = os.getenv('MAIL_USERNAME')
 
 app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD')
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
-db.init_app(app)
+# db.init_app(app)
 mail = Mail(app)
 date = datetime.now().year
 
@@ -45,9 +45,9 @@ def contact():
         print(f"Received: {name}, {email}, {subject}, {message}")  # Debug log
 
         new_contact = Contacts(name=name, email=email, subject=subject, message=message)
-        db.session.add(new_contact)
-        db.session.commit()
-        print("Saved to database ✅")
+        # db.session.add(new_contact)
+        # db.session.commit()
+        # print("Saved to database ✅")
 
         msg = Message(
             subject=f"New Contact Form Submission: {subject}",
@@ -68,7 +68,7 @@ def contact():
         return redirect(url_for('home'))
 
     except Exception as e:
-        db.session.rollback()
+        # db.session.rollback()
         print("❌ ERROR:", e)  # Most important line!
         flash('An error occurred. Please try again later.', 'danger')
         return redirect(url_for('home'))
