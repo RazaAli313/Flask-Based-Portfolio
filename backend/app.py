@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, flash, redirect, url_for
 from flask_mail import Mail, Message
 from datetime import datetime
+from flask_cors import CORS
 # from database import db, Contacts
 from dotenv import load_dotenv
 import os
@@ -8,6 +9,7 @@ import os
 load_dotenv()
 app = Flask(__name__)
 
+CORS(app)
 # app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv(
 #     'DATABASE_URL',  
 # )
