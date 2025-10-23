@@ -24,10 +24,11 @@ This is a professional **personal portfolio website** built with **Flask**, **SQ
 
 | Layer       | Tech                            |
 |-------------|---------------------------------|
-| Backend     | Flask, Flask-Mail, SQLAlchemy   |
-| Frontend    | HTML5, CSS3, Vanilla JavaScript |
-| Database    | PostgreSQL                           |
-| Deployment  | Railway + GitHub Integration     |
+| Backend     | Flask 3.1.2, Flask-Mail 0.10.0, Flask-CORS 6.0.1, Flask-SQLAlchemy 3.1.1   |
+| Frontend    | HTML5, CSS3, Vanilla JavaScript, Bootstrap |
+| Database    | PostgreSQL (via SQLAlchemy 2.0.44)                           |
+| Deployment  | Railway/Vercel + GitHub Integration, Gunicorn 23.0.0     |
+| Environment | Python 3.x, python-dotenv 1.1.1     |
 
 ---
 
