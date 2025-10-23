@@ -30,6 +30,8 @@ This is a professional **personal portfolio website** built with **Flask**, **SQ
 | Deployment  | Railway/Vercel + GitHub Integration, Gunicorn 23.0.0     |
 | Environment | Python 3.x, python-dotenv 1.1.1     |
 
+📚 **For detailed information about the tech stack, see [TECH_STACK.md](TECH_STACK.md)**
+
 ---
 
 ## 📁 Project Structure
