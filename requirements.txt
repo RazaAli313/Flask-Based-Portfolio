@@ -1,7 +1,9 @@
+Flask==3.0.3
+Flask-Mail==0.9.1
+Flask-Cors==4.0.0
 python-dotenv==1.0.0
+gunicorn==23.0.0
+SQLAlchemy==2.0.41
 python-jose==3.3.0
 regex==2024.11.6
 requests==2.32.4
-SQLAlchemy==2.0.41
-Flask==3.1.0
-gunicorn
