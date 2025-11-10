@@ -7,7 +7,8 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-app = Flask(__name__)
+app = Flask(__name__, template_folder='../templates', static_folder='../static')
+
 
 CORS(app)
 # app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv(
